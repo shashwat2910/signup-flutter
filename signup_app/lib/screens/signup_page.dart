@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:signup_app/screens/login.dart';
 
-class SignUp extends StatefulWidget {
-  @override
-  _SignUpState createState() => _SignUpState();
-}
-
-class _SignUpState extends State<SignUp> {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.black,
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Login App',
+      theme: ThemeData(
+        accentColor: Colors.orange,
+        primarySwatch: Colors.blue,
+      ),
+      home: LoginScreen(),
     );
   }
 }
