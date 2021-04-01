@@ -8,6 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
+        // ignore: deprecated_member_use
         child: FlatButton(
             onPressed: () {
               auth.signOut().then((value) => Navigator.of(context)

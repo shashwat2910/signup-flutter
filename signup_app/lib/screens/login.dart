@@ -44,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
+            // ignore: deprecated_member_use
             RaisedButton(
                 color: Theme.of(context).accentColor,
                 child: Text('Signin'),
@@ -56,6 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         MaterialPageRoute(builder: (context) => HomeScreen()));
                   });
                 }),
+            // ignore: deprecated_member_use
             RaisedButton(
               color: Theme.of(context).accentColor,
               child: Text('Signup'),
